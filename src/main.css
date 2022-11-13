@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --primary-color: #2e2f31;
+  --secondary-color: #3e3f41;
+  --text-color: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  letter-spacing: .7px;
+}
+
+input:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Form Page CSS */
+
+.form-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+}
+
+.form-container {
+  width: 450px;
+  background-color: var(--primary-color);
+  padding: 25px;
+  border-radius: 3px;
+  color: #e0e0e0;
+}
+
+.form-container h3 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.form-container h3 span {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container form div[data-lastpass-icon-root=true] {
+  display: none;
+}
+
+.form-container form input {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 15px;
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.form-container form input:focus {
+  outline: none;
+}
+
+.form-container label {
+  border: 2px dashed var(--secondary-color);
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.form-container label img {
+  width: 35px;
+  margin-right: 15px;
+}
+
+.form-container button {
+  margin-bottom: 15px;
+  font-size: 18px;
+  border: none;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  color: #e0e0e0;
+  padding: 15px;
+  letter-spacing: 1px;
+  transition: .1s;
+  border-radius: 3px;
+}
+
+.form-container p {
+  text-align: center;
+}
+
+.form-container p a {
+  color:coral;
+  font-weight: 700;
+}
+
+/* Chat Container Page CSS */
+.chat-container {
+  background-color: cornflowerblue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-container .container {
+  background-color: var(--primary-color);
+  width: 60%;
+  height: 80%;
+  border-radius: 3px;
+  display: flex;
+  color: white;
+  box-shadow: 0 0 5px black;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+}
+
+.chat {
+  flex: 2;
+  background-color: var(--secondary-color);
+}
+
+.chats h4 {
+  font-size: 22px;
+  text-align: center;
+}
+
+/* Sidebar CSS */
+
+.sidebar-header {
+  border-bottom: 2px solid var(--secondary-color);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-header .brand-name span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sidebar-header .header-profile {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.sidebar-header .header-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.sidebar-header .header-profile button {
+  border: none;
+  padding: 3px 7px;
+  cursor: pointer;
+  background-color: darkred;
+  color: white;
+  border-radius: 2px;
+}
+
+.search {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.search input {
+  background-color: var(--secondary-color);
+  padding: 15px;
+  width: 100%;
+  border: none;
+  color: var(--text-color);
+}
+
+.search span {
+  display: block;
+  margin-top: 10px;
+  padding-left: 7px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: .3s;
+  padding: 10px;
+  border-radius: 3px;
+  color: var(--text-color);
+}
+
+.user-box img {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.user-box h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.user-box:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Chat Page CSS */
+.chat .chat-header {
+  display: flex;
+  background-color: var(--primary-color);
+  height: 80px;
+  align-items: center;
+  border-right: 15px solid var(--secondary-color);
+  border-left: 15px solid var(--secondary-color);
+  padding: 20px;
+  border-radius: 0 0px 3px 3px;
+  justify-content: space-between;
+}
+
+
+.chat-header .header-right button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: var(--secondary-color);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.chat .chat-header h4 {
+  font-size: 22px;
+}
+
+.input {
+  height: 70px;
+  background-color: #2e2f31;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-right: 15px solid var(--secondary-color);
+  border-left: 15px solid var(--secondary-color);  
+}
+
+.input input {
+  width: 100%;
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 15px;
+  color: var(--text-color);
+}
+
+.input img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.input div:first-child {
+  flex: 5;
+}
+
+.input div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 2;
+  gap: 10px;
+}
+
+.input div:last-child button {
+  background-color: #10b981;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px 35px;
+  font-size: 18px;
+  border-radius: 3px;
+  transition: .1s;
+}
+
+.input div:last-child button:active, .form-container button:active {
+  transform: scale(.95);
+}
+
+/* Messages CSS */
+
+.messages {
+  padding: 20px;
+  height: calc(100% - 150px);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.message {
+  display: flex;
+  gap: 20px;
+}
+
+.message img {
+  max-width: 100%;
+}
+
+.message .meta img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.message .content {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  gap: 10px;
+  background-color: cornflowerblue;
+  padding: 10px;
+  border-radius: 0px 15px 15px 15px;
+  justify-content: center;  
+}
+
+.message .content img {
+  width: 350px;
+  object-fit: fill;
+}
+
+.message.self {
+  flex-direction: row-reverse;
+}
+
+.message.self .content {
+  align-items: flex-end;
+  background-color: #10b981;
+  border-radius: 15px 0 15px 15px;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.message.self .meta {
+  align-items: flex-end;
+}
+
+.meta span {
+  font-size: 10px;
+}
+
+/* Profile CSS */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile .avatar {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Scrollbar CSS */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
